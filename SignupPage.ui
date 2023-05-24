@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1013</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1011</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+#widget{
+	background-color:#eeeee4;
+}
+
+#title{
+	color:#1e81b0
+}
+#emaillabel, #passwordlabel, #confirmpasswordlabel, #usernamelabel, #phonelabel, #loginlabel{
+	color:#1e81b0;	
+}
+
+#emailtextfield, #passwordtextfield, #confirmpasswordtextfield, #usernametextfield, #phonetextfield{
+	color:#1e81b0;	
+	border-radius:10px;
+	border:2px solid #1e81b0;
+}
+
+#loginButton{
+	border-radius:10px;
+	border:2px solid #1e81b0;
+	color:#1e81b0;	
+	background-color:#cbe4e8;
+}
+
+#signupButton{
+	color:#1e81b0;	
+	border-radius:10px;
+	border:2px solid #1e81b0;
+	background-color:#cbe4e8;
+}
+
+#cpwlabel{
+	
+}
+
+
+</string>
+   </property>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>60</y>
+      <width>601</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell Extra Bold</family>
+      <pointsize>22</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0, 0,0,0)</string>
+    </property>
+    <property name="text">
+     <string>MONITORING EQUIPMENT SYSTEM</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="connectMysql">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>380</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell Extra Bold</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Connect</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="hostnamefield">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>170</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill Sans Ultra Bold</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0, 0,0,0)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="usernamefield">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>220</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill Sans Ultra Bold</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0, 0,0,0)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="usernamelabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>150</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill Sans Ultra Bold</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Hostname/IP Address:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="passwordlabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>200</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill Sans Ultra Bold</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Username:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="confirmpasswordlabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>250</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill Sans Ultra Bold</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0, 0,0,0)</string>
+    </property>
+    <property name="text">
+     <string>Password:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordfield">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>270</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill Sans Ultra Bold</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0, 0,0,0)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emaillabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>300</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill Sans Ultra Bold</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0)</string>
+    </property>
+    <property name="text">
+     <string>Database:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="phonelabel">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>120</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cantarell Extra Bold</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0)</string>
+    </property>
+    <property name="text">
+     <string>MySQL Connection</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="databasefield">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>320</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill Sans Ultra Bold</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0, 0,0,0)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cpwlabel">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>250</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill Sans Ultra Bold</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cpwlabel_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>400</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Gill Sans Ultra Bold</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

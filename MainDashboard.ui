@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1033</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+	color:#000;
+	border:none;
+}
+
+#centralwidget{
+	background-color:#eeeee4;
+}
+#profileacc,#sidenav{
+	background-color:#1e81b0;
+}
+QLineEdit{
+	background:transparent;
+}
+QPushButton{
+	background: transparent;
+	border: none;
+}
+#searchFrame{
+	border-radius:10px;
+	border:2px solid #1e81b0;
+}
+#appHeadear{
+	color:#1e81b0
+}
+#card1, #card2, #card3, #card4, #frame_6{
+	background-color:#cbe4e8;
+	border-radius:10px;
+}
+#equipment{
+	border-radius:10px;
+	border:2px solid #1e81b0;
+}
+
+#borrower{
+	border-radius:10px;
+	border:2px solid #1e81b0;
+}
+
+#time{
+	border-radius:10px;
+	border:2px solid #1e81b0;
+}
+
+#date{
+	border-radius:10px;
+	border:2px solid #1e81b0;
+}
+
+#viewmoreBtn{
+	border-radius:5px;
+	border:2px solid #1e81b0;
+	background-color:#cbe4e8;
+}
+
+#home{
+	background-color:#eeeee4;
+	padding:5px;
+	text-align: left;
+	border-top-left-radius: 20px;
+}
+
+#addeq{
+	padding:5px;
+	text-align: left;
+	border:none
+}
+
+#transactlist{
+	padding:5px;
+	text-align: left;
+	border:none
+}
+
+#deleq{
+	padding:5px;
+	text-align: left;
+	border:none
+}
+#equip{
+	padding:5px;
+	text-align: left;
+	border:none
+}
+
+#borrower_1{
+	padding:5px;
+	text-align: left;
+	border:none
+}
+
+#myprofile{
+	padding:5px;
+	text-align: left;
+	border:none
+}
+
+#logout{
+	padding:5px;
+	text-align: left;
+	border:none
+}
+
+#editborrower{
+	padding:5px;
+	text-align: left;
+	border:none
+}
+
+
+#home{
+	color:#1e81b0;
+	border:none
+}
+
+#transactlist, #borrower_1, #equip, #logout, #myprofile, #label{
+	color:#ffffff;
+	border:none
+}
+
+
+
+</string>
+   </property>
+   <widget class="QWidget" name="leftMenu" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>231</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item alignment="Qt::AlignTop">
+      <widget class="QFrame" name="sidenav">
+       <property name="font">
+        <font>
+         <family>Gill Sans Ultra Bold</family>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>262</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="home">
+          <property name="font">
+           <font>
+            <family>Cantarell Extra Bold</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Home</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/blueIcons/icons/blueIcons/home.svg</normaloff>:/blueIcons/icons/blueIcons/home.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="equip">
+          <property name="font">
+           <font>
+            <family>Cantarell Extra Bold</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Devices</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/whiteIcons/icons/whiteIcons/hard-drive.svg</normaloff>:/whiteIcons/icons/whiteIcons/hard-drive.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="borrower_1">
+          <property name="font">
+           <font>
+            <family>Cantarell Extra Bold</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Borrower</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/whiteIcons/icons/whiteIcons/users.svg</normaloff>:/whiteIcons/icons/whiteIcons/users.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="transactlist">
+          <property name="font">
+           <font>
+            <family>Cantarell Extra Bold</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Transaction List</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/whiteIcons/icons/whiteIcons/list.svg</normaloff>:/whiteIcons/icons/whiteIcons/list.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignBottom">
+      <widget class="QFrame" name="profileacc">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QWidget" name="widget_5" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>:/whiteIcons/icons/whiteIcons/user.svg</normaloff>:/whiteIcons/icons/whiteIcons/user.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="font">
+              <font>
+               <family>Cantarell Extra Bold</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Admin</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_8">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <item>
+            <widget class="QPushButton" name="logout">
+             <property name="font">
+              <font>
+               <family>Cantarell Extra Bold</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Logout</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>:/whiteIcons/icons/whiteIcons/log-out.svg</normaloff>:/whiteIcons/icons/whiteIcons/log-out.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="mainBody" native="true">
+    <property name="geometry">
+     <rect>
+      <x>231</x>
+      <y>0</y>
+      <width>781</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="headerFrame" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <item alignment="Qt::AlignLeft">
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="menuBtn">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>:/blueIcons/icons/blueIcons/home.svg</normaloff>:/blueIcons/icons/blueIcons/home.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="appHeadear">
+             <property name="font">
+              <font>
+               <family>Cantarell Extra Bold</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Dashboard</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignRight">
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item alignment="Qt::AlignTop">
+            <widget class="QFrame" name="searchFrame">
+             <property name="minimumSize">
+              <size>
+               <width>140</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>:/blueIcons/icons/blueIcons/search.svg</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="search">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold Condensed</family>
+                 </font>
+                </property>
+                <property name="placeholderText">
+                 <string>Search...</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="cardsFrame" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QFrame" name="card1">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QFrame" name="frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="equipmentIcon">
+                <property name="maximumSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>:/blueIcons/icons/blueIcons/hard-drive.svg</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="equipment">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold</family>
+                 </font>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="equipmentInOut">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold</family>
+                 </font>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="card2">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QFrame" name="frame_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="borrowerIcon">
+                <property name="maximumSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>:/blueIcons/icons/blueIcons/user.svg</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLineEdit" name="borrower">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold</family>
+                 </font>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="borrowerInOut">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold</family>
+                 </font>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="card3">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QFrame" name="frame_3">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="timeIcon">
+                <property name="maximumSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>:/blueIcons/icons/blueIcons/clock.svg</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLineEdit" name="time">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold</family>
+                 </font>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="timeInOut">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold</family>
+                 </font>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="card4">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item>
+            <widget class="QFrame" name="frame_4">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="dateIcon">
+                <property name="maximumSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>:/blueIcons/icons/blueIcons/calendar.svg</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLineEdit" name="date">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold</family>
+                 </font>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="dateInOut">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold</family>
+                 </font>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="card4_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(203, 228, 232);
+
+ border-radius:10px;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_19">
+           <item>
+            <widget class="QFrame" name="frame_10">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_20">
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLabel" name="dateIcon_3">
+                <property name="maximumSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>:/blueIcons/icons/blueIcons/calendar.svg</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+               <widget class="QLineEdit" name="track">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold</family>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">
+
+border-radius:10px;
+border:2px solid #1e81b0;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="bor_return">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold</family>
+                 </font>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="mainFrame" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QWidget" name="widget_4" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <widget class="QFrame" name="frame_5">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item alignment="Qt::AlignRight|Qt::AlignTop">
+               <widget class="QLabel" name="listLabel">
+                <property name="font">
+                 <font>
+                  <family>Cantarell Extra Bold</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:rgb(30, 129, 176)</string>
+                </property>
+                <property name="text">
+                 <string>Transaction List</string>
+                </property>
+                <property name="scaledContents">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignRight|Qt::AlignTop">
+               <widget class="QPushButton" name="viewmoreBtn">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Cantarell Extra Bold</family>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(30, 129, 176);</string>
+                </property>
+                <property name="text">
+                 <string>View More</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_14">
+              <item>
+               <widget class="QFrame" name="frame_7">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item>
+                  <widget class="QTableWidget" name="data_table">
+                   <property name="font">
+                    <font>
+                     <family>Sans Serif</family>
+                    </font>
+                   </property>
+                   <column>
+                    <property name="text">
+                     <string>Tag</string>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Cantarell Extra Bold</family>
+                     </font>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Name</string>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Cantarell Extra Bold</family>
+                     </font>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Date</string>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Cantarell Extra Bold</family>
+                     </font>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Time</string>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Cantarell Extra Bold</family>
+                     </font>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Action</string>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Cantarell Extra Bold</family>
+                     </font>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Tracker</string>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Cantarell Extra Bold</family>
+                     </font>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

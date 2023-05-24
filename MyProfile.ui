@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1013</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+	color:#000;
+	border:none;
+}
+#centralwidget{
+	background-color:#eeeee4;
+}
+#profileacc_3,#sidenav_3{
+	background-color:#1e81b0;
+}
+QLineEdit{
+	background:transparent;
+}
+QPushButton{
+	background: transparent;
+	border: none;
+}
+#searchFrame_3{
+	border-radius:10px;
+	border:2px solid #1e81b0;
+}
+#appHeadear_5{
+	color:#1e81b0
+}
+#card1, #card2, #card3, #card4, #frame_6{
+	background-color:#cbe4e8;
+	border-radius:10px;
+}
+#equipment{
+	border-radius:10px;
+	border:2px solid #1e81b0;
+}
+
+#borrower{
+	border-radius:10px;
+	border:2px solid #1e81b0;
+}
+
+#time{
+	border-radius:10px;
+	border:2px solid #1e81b0;
+}
+
+#date{
+	border-radius:10px;
+	border:2px solid #1e81b0;
+}
+
+#viewmoreBtn{
+	border-radius:5px;
+	border:2px solid #1e81b0;
+	background-color:#cbe4e8;
+}
+
+#myprofile_5{
+	background-color:#eeeee4;
+	padding:5px;
+	text-align: left;
+	border-top-left-radius: 20px;
+}
+
+#equip_5{
+	padding:5px;
+	text-align: left;
+	border:none
+}
+
+#borrower_5{
+	padding:5px;
+	text-align: left;
+	border:none
+}
+
+#home_5{
+	padding:5px;
+	text-align: left;
+	border:none
+	
+}
+#transactlist_5{
+	padding:5px;
+	text-align: left;
+	border:none
+	
+}
+
+#myprofile_5{
+	padding:5px;
+	text-align: left;
+	border:none
+	
+}
+
+#logout_5{
+	padding:5px;
+	text-align: left;
+	border:none
+	
+}
+
+
+#myprofile_5{
+	color:#1e81b0;
+	border:none
+}
+
+#home_5, #borrower_5, #equip_5, #logout_5, #myprofile_4, #label_5, #transactlist_5{
+	color:#ffffff;
+	border:none
+}
+
+
+</string>
+   </property>
+   <widget class="QWidget" name="mainBody" native="true">
+    <property name="geometry">
+     <rect>
+      <x>231</x>
+      <y>0</y>
+      <width>781</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="headerFrame_2" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <item alignment="Qt::AlignLeft">
+         <widget class="QWidget" name="widget_3" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QPushButton" name="menuBtn_2">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/blueIcons/icons/blueIcons/user.svg</normaloff>:/blueIcons/icons/blueIcons/user.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="appHeadear_5">
+             <property name="font">
+              <font>
+               <family>Gill Sans Ultra Bold</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>My Profile</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="mainFrame_2" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_7" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="leftMenu" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>231</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_8">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item alignment="Qt::AlignTop">
+      <widget class="QFrame" name="sidenav_3">
+       <property name="font">
+        <font>
+         <family>Gill Sans Ultra Bold</family>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>262</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="home_5">
+          <property name="font">
+           <font>
+            <family>Gill Sans Ultra Bold</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Home</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/whiteIcons/icons/whiteIcons/home.svg</normaloff>:/whiteIcons/icons/whiteIcons/home.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="equip_5">
+          <property name="font">
+           <font>
+            <family>Gill Sans Ultra Bold</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Devices</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/whiteIcons/icons/whiteIcons/hard-drive.svg</normaloff>:/whiteIcons/icons/whiteIcons/hard-drive.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="borrower_5">
+          <property name="font">
+           <font>
+            <family>Gill Sans Ultra Bold</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Borrower</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/whiteIcons/icons/whiteIcons/users.svg</normaloff>:/whiteIcons/icons/whiteIcons/users.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="transactlist_5">
+          <property name="font">
+           <font>
+            <family>Gill Sans Ultra Bold</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Transaction List</string>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/whiteIcons/icons/whiteIcons/list.svg</normaloff>:/whiteIcons/icons/whiteIcons/list.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="autoDefault">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignBottom">
+      <widget class="QFrame" name="profileacc_3">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget_8" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_17">
+           <item>
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/whiteIcons/icons/whiteIcons/user.svg</normaloff>:/whiteIcons/icons/whiteIcons/user.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="font">
+              <font>
+               <family>Gill Sans Ultra Bold</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Admin</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_9">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_18">
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="myprofile_5">
+             <property name="font">
+              <font>
+               <family>Gill Sans Ultra Bold</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>My Profile</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/blueIcons/icons/blueIcons/settings.svg</normaloff>:/blueIcons/icons/blueIcons/settings.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="logout_5">
+             <property name="font">
+              <font>
+               <family>Gill Sans Ultra Bold</family>
+              </font>
+             </property>
+             <property name="text">
+              <string>Logout</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/whiteIcons/icons/whiteIcons/log-out.svg</normaloff>:/whiteIcons/icons/whiteIcons/log-out.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+  <include location="C:/Users/ec/AppData/Local/Programs/Python/Python39/Lib/site-packages/qt5_applications/Qt/bin/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
