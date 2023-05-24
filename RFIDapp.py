@@ -406,7 +406,7 @@ class MainDashboard(QMainWindow):
                 cursorlite1.execute("INSERT INTO rfid_data (rfid_tag, name, date, time, action, bor_returnName) VALUES ('"+ self.data +"', '"+ self.name1 +"', '"+ self.cur_date +"', '"+ self.cur_time +"', '"+ self.action +"', '"+ self.name1 +"')")
                 con3.commit()
                 self.loadTable()
-                
+                TransactionList.loadDataTransact()
                 
             
           
@@ -449,7 +449,7 @@ class MainDashboard(QMainWindow):
                     cursorlite2.execute("INSERT INTO rfid_data (rfid_tag, name, date, time, action, bor_returnName) VALUES ('"+ self.data +"', '"+ name2 +"', '"+ self.cur_date +"', '"+ self.cur_time +"', '"+ self.action +"', '"+ self.name1 +"')")
                     con3.commit() 
                     self.loadTable()
-                   
+                    TransactionList.loadDataTransact()
                     
                
             
@@ -469,6 +469,7 @@ class MainDashboard(QMainWindow):
                     cursorlite2.execute("INSERT INTO rfid_data (rfid_tag, name, date, time, action, bor_returnName) VALUES ('"+ self.data +"', '"+ name2 +"', '"+ self.cur_date +"', '"+ self.cur_time +"', '"+ self.action +"', '"+ self.name1 +"')")
                     con3.commit() 
                     self.loadTable()
+                    TransactionList.loadDataTransact()
                    
                     
             elif datta2 != "Borrower In" :

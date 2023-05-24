@@ -105,7 +105,9 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">border-radius:5px;
+  border:2px solid #1e81b0;
+background-color:#cbe4e8;</string>
     </property>
     <property name="text">
      <string>Connect</string>
