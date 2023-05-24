@@ -254,6 +254,7 @@ class SignupScreen(QDialog):
 class MainDashboard(QMainWindow):
     def __init__(self):
         super(MainDashboard, self).__init__()
+        transact = TransactionList()
         loadUi("MainDashboard.ui", self)
         self.transactlist.clicked.connect(self.transactnav)
         self.borrower_1.clicked.connect(self.borrowernav)
@@ -389,7 +390,7 @@ class MainDashboard(QMainWindow):
                 cursorlite1.execute("INSERT INTO rfid_data (rfid_tag, name, date, time, action, bor_returnName) VALUES ('"+ self.data +"', '"+ self.name1 +"', '"+ self.cur_date +"', '"+ self.cur_time +"', '"+ self.action +"', '"+ self.name1 +"')")
                 con3.commit()
                 self.loadTable()
-                TransactionList.loadDataTransact()
+                transact.loadDataTransact()
                
                  
                 
@@ -535,7 +536,6 @@ class MainDashboard(QMainWindow):
         widget.setCurrentIndex(5)
 
     def transactnav(self):
-        transact = TransactionList()
         widget.addWidget(transact)
         widget.setFixedHeight(601)
         widget.setFixedWidth(1013)
